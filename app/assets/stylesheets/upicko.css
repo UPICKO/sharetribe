@@ -134,7 +134,7 @@
 
 /*Make the "Add new listing" button without underline while mouse hovering*/
 .AddNewListingButton__responsiveLayout__1JnL9:hover {
-    text-decoration: none; !important;
+    text-decoration: none !important;
 }
 
 .custom-filter-checkbox-label-text {
