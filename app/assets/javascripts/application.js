@@ -91,3 +91,10 @@
 //= require radio_buttons
 //= require new_layout
 //= require_self
+//= require upicko_constants
+//= require upicko_common
+//= require upicko_detailPageJs
+//= require upicko_landingPageJs
+//= require jssor.slider-25.0.6.min
+//= require icheck
+//= require upicko_homePageJs
