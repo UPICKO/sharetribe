@@ -131,4 +131,6 @@ Rails.application.configure do
 
   # We don't need schema dumps in this environment
   config.active_record.dump_schema_after_migration = false
+
+  Rails.application.config.action_controller.forgery_protection_origin_check = false
 end
