@@ -27,18 +27,6 @@ $(function() {
 });
 
 $(window).on('load', function () {
-    if($("#upicko_landing_page").length) {
-        // Display the landing page when all of the content is loaded.
-        $("#upicko_landing_page").show();
-        setTimeout(function() {
-            // Delay to display the sumome social client.
-            $(".sumome-share-client").attr("style", "display: inline !important");
-        }, 2000);
-    }
-    if($("#spinner_landing_page").length) {
-        // Remove spinner in the landing page when the content is loaded
-        $("#spinner_landing_page").remove();
-    }
     setTimeout(function() {
         // Remove the sumo jump box
         $("a[title='Sumo']").remove();
