@@ -152,11 +152,6 @@
     display: none;
 }
 
-/*Hide the main content for the home page*/
-#homepage-filters {
-    display: none;
-}
-
 /*Hide the location search*/
 .SearchBar__locationInput__3g__8 {
     display: none;
