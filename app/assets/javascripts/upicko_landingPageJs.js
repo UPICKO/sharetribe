@@ -1,6 +1,6 @@
 $(function() {
     //$('#homepage-filters').show();
-    if (window.location.href == 'http://lvh.me:5000/' || window.location.href == 'http://lvh.me:5000') {
+    if (window.location.href == 'https://www.upicko.com/' || window.location.href == 'https://www.upicko.com') {
         if (!checkTemplateLiteralSupported()) {
             alert("Your browser is not supported. Please consider using Chrome, Firefox or Microsoft Edge");
         } else {
