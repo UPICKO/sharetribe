@@ -2,9 +2,15 @@
 
 .paypal-button-wrapper {
 
-  .checkout-with-paypal-button {
+  .checkout-with-paypal-button, .checkout-with-stripe-button {
     float: left;
     outline: 0;
+  }
+  .checkout-with-stripe-button  {
+    margin: 0;
+  }
+  .paypal-image {
+    margin: 0.75em 0;
   }
   & .paypal-button-loading-img {
     float: left;
