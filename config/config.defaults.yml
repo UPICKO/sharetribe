@@ -51,7 +51,7 @@ default: &default_settings
   #
   # Recommended setup: Set serve_static_files to true and setup CDN distribution
   # Alternative setup: Set serve_static_files to false and setup Nginx/Apache in front of the Rails servers
-  serve_static_files: true
+  serve_static_files: false
 
   # Your CDN distribution host name
   #
@@ -101,9 +101,9 @@ default: &default_settings
   aws_ses_sns_topic:
 
   # Paypal credentials for the platform owner.
-  paypal_username: xxxxxxxxxxxxx
-  paypal_password: xxxxxxxxxxxxx
-  paypal_signature: xxxxxxxxxxxxx
+  paypal_username: crispcakeinc-facilitator_api1.gmail.com
+  paypal_password: 2AMSG6H36YJNAMS3
+  paypal_signature: AFcWxV21C7fd0v3bYYYRCpSSRl31AZoolUY4y31E2niGWvLJXoAverMJ
   paypal_partner_id: xxxxxxxxxxxxx # payerID for paypal platform owner account
   paypal_app_id: APP-80W284485P519543T # Global test id
   paypal_button_source: # Unique value given to you by your PayPal contact

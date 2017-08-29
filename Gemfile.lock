@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/k3rni/ffi-locale.git
+  remote: git://github.com/k3rni/ffi-locale.git
   revision: 2ea4b6511c0024d19e11d476657e2e35864c592f
   specs:
     ffi-locale (0.2.2)
@@ -669,4 +669,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.15.1
+   1.15.4
