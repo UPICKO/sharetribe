@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/k3rni/ffi-locale.git
+  remote: https://github.com/k3rni/ffi-locale.git
   revision: 2ea4b6511c0024d19e11d476657e2e35864c592f
   specs:
     ffi-locale (0.2.2)
