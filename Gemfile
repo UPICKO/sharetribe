@@ -167,7 +167,4 @@ gem 'redcarpet', '~> 3.4.0'
 
 gem 'intercom'
 
-gem 'ffi-locale',
-    git: 'https://github.com/k3rni/ffi-locale.git',
-    branch: 'master',
-    ref: '2ea4b6511c0024d19e11d476657e2e35864c592f'
+gem 'twitter_cldr'
