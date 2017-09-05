@@ -1396,6 +1396,7 @@ en:
       departure_time_radio_buttons:
         repeated: "Repeated (add times and days in the field 'detailed description')"
       description:
+        brief_description: "Brief description"
         detailed_description: "Detailed description"
         youtube_info: "If your description contains YouTube links, the videos will be shown below the description."
       destination:
@@ -1483,6 +1484,8 @@ en:
         privacy: Privacy
         private: "Private (only users who are logged in can see)"
         public: "Public (visible to users who are not logged in)"
+      opening_hours: "Opening Hours"
+      openning_hours_example: "E.g. 10am to 5pm, Friday to Sunday. Season Dates: Mid September to December. All other times by appointment only. Closed on Christmas Day"
     help_texts:
       help_share_type_title: "Type of the offer or request"
       help_tags_title: Tags

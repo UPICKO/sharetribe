@@ -1381,6 +1381,7 @@ zh:
       departure_time_radio_buttons:
         repeated: 重复的（在字段“详细描述”中添加次数和天数）
       description:
+        brief_description: 简要描述
         detailed_description: 详细描述
         youtube_info: "如果您的描述包括Youtube连结, 该影片将会在描述栏下方显示."
       destination:
@@ -1468,6 +1469,8 @@ zh:
         privacy: 隐私
         private: 私密的（只对登录用户可见）
         public: 公共的（对所有用户可见）
+      opening_hours: "开放时间"
+      openning_hours_example: "例如: 10am to 5pm, Friday to Sunday. Season Dates: Mid September to December. All other times by appointment only. Closed on Christmas Day"
     help_texts:
       help_share_type_title: 宝贝或者请求的信息的类型
       help_tags_title: 标签
