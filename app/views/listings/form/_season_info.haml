@@ -1,0 +1,3 @@
+= form.label :upicko_season_info, t("listings.form.season_info.label"), :class => "input"
+= render partial: "layouts/info_text", locals: { text: t("listings.form.season_info.info") }
+= form.text_area(:upicko_season_info, :class => "upicko_season_info", :maxlength => "60")

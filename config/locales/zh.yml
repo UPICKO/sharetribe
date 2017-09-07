@@ -1469,8 +1469,26 @@ zh:
         privacy: 隐私
         private: 私密的（只对登录用户可见）
         public: 公共的（对所有用户可见）
-      opening_hours: "开放时间"
-      openning_hours_example: "例如: 10am to 5pm, Friday to Sunday. Season Dates: Mid September to December. All other times by appointment only. Closed on Christmas Day"
+      opening_hours:
+        info: "例如: 10am to 5pm, Friday to Sunday. Season Dates: Mid September to December. All other times by appointment only. Closed on Christmas Day"
+        label: "开放时间"
+      access_fees:
+        info: "E.g. Adult: $10, Kid: $5"
+        label: "Access Fee"
+      unit_fees:
+        info: "E.g. Cherries: $12 / Kg, Strawberries: $5 / Kg"
+        label: "Unit Fee"
+      facility_info:
+        info: "E.g. Caffe, toilet, picnic area"
+        label: "Facilities"
+      season_info:
+        info: "E.g. Cherries are available now!!! Strawberry is out of season, will be available until mid March next year."
+        label: "Season Info"
+      season_status:
+        label: "Season Status"
+      brief_desc:
+        info: "Please put a brief description of your farm, e.g. why you are special to the customers."
+        label: "Farm Description"
     help_texts:
       help_share_type_title: 宝贝或者请求的信息的类型
       help_tags_title: 标签
