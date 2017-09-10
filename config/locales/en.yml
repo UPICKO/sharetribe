@@ -1501,6 +1501,8 @@ en:
         label: "Season Info"
       season_status:
         label: "Season Status"
+        in_season_option_label: "In Season"
+        out_of_season_option_label: "Out Of Season"
       brief_desc:
         info: "Please put a brief description of your farm, e.g. why you are special to the customers."
         label: "Farm Description"

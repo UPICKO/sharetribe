@@ -74,6 +74,7 @@
 
     .row
       .col-12
+        = @listing.upicko_season_statusupicko_season_status
         - if @listing.description && !@listing.description.blank?
           - text_with_line_breaks do
             = @listing.description

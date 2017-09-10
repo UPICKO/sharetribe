@@ -47,7 +47,13 @@
 #  shipping_price_cents            :integer
 #  shipping_price_additional_cents :integer
 #  availability                    :string(32)       default("none")
-#  opening_hours                   :string(255)       default("none")
+#  upicko_opening_hours                   :string(255)      default("none")
+#  upicko_season_status                   :integer
+#  upicko_season_info                     :text             default("none")
+#  upicko_access_fee                      :string(255)      default("none")
+#  upicko_unit_fee                        :string(255)      default("none")
+#  upicko_facility_info                   :text             default("none")
+#  upicko_brief_info                      :text             default("none")
 #
 # Indexes
 #

@@ -226,10 +226,6 @@
     max-width: 600px !important;
 }
 
-.listing-details-container .row:nth-child(2) .col-12 {
-    display: none;
-}
-
 .desc_template_label {
     font-weight: bold;
     font-size: 16px;
@@ -242,8 +238,4 @@
 
 .desc_template_ul {
     padding-left: 3em;
-}
-
-.js-listing-form-ready textarea {
-    width: 1000px !important;
 }
