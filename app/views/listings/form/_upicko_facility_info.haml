@@ -1,3 +1,3 @@
 = form.label :upicko_facility_info, t("listings.form.facility_info.label"), :class => "input"
 = render partial: "layouts/info_text", locals: { text: t("listings.form.facility_info.info") }
-= form.text_field(:upicko_facility_info, :class => "upicko_facility_info", :maxlength => "60")
+= form.text_area(:upicko_facility_info, :class => "upicko_facility_info", :maxlength => "3000")

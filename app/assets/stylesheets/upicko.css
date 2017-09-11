@@ -201,18 +201,6 @@
     }
 }
 
-.sumome-control {
-    display: none !important;
-}
-
-.sumome-ga-hud {
-    display: none !important;
-}
-
-.sumome-share-client {
-    display: none !important;
-}
-
 .home-fluid-thumbnail-grid-details-author-name {
     width: inherit;
 }
@@ -238,4 +226,12 @@
 
 .desc_template_ul {
     padding-left: 3em;
+}
+
+.upicko_red {
+    color: red;
+}
+
+.upicko_green {
+    color: green;
 }

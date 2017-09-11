@@ -72,10 +72,60 @@
                       - else
                         = t(".no_description")
 
+    -#.row
+    -#  .col-12
+    -#    = @listing.upicko_season_statusupicko_season_status
+    -#    - if @listing.description && !@listing.description.blank?
+    -#      - text_with_line_breaks do
+    -#        = @listing.description
+    -#      - if(youtube_link_ids.present?)
+    -#        - youtube_link_ids.each do |youtube_id|
+    -#          .listing-description-youtube-wrapper
+    -#            %iframe.listing-description-youtube-iframe{ title: t("listings.show.youtube_video_player"), width: 640, height:390, src: "//www.youtube.com/embed/#{ youtube_id }", frameborder: 0, allowfullscreen: true}
+
     .row
       .col-12
-        = @listing.upicko_season_statusupicko_season_status
-        - if @listing.description && !@listing.description.blank?
+        .desc_template_label
+          = t("listings.form.season_status.label")
+        .desc_template_content
+          - if @listing.upicko_season_status == 1
+            .upicko_green
+              = t("listings.form.season_status.in_season_option_label")
+          - else
+            .upicko_red
+              = t("listings.form.season_status.out_of_season_option_label")
+
+        .desc_template_label
+          = t("listings.form.season_info.label")
+        .desc_template_content
+          - text_with_line_breaks do
+            = @listing.upicko_season_info
+
+        .desc_template_label
+          = t("listings.form.opening_hours.label")
+        .desc_template_content
+          - text_with_line_breaks do
+            = @listing.upicko_opening_hours
+
+        .desc_template_label
+          = t("listings.form.access_fees.label")
+        .desc_template_content
+          = @listing.upicko_access_fee
+
+        .desc_template_label
+          = t("listings.form.unit_fees.label")
+        .desc_template_content
+          = @listing.upicko_unit_fee
+
+        .desc_template_label
+          = t("listings.form.facility_info.label")
+        .desc_template_content
+          - text_with_line_breaks do
+            = @listing.upicko_facility_info
+
+        .desc_template_label
+          = t("listings.form.description.brief_description")
+        .desc_template_content
           - text_with_line_breaks do
             = @listing.description
           - if(youtube_link_ids.present?)
