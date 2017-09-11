@@ -1,0 +1,3 @@
+= form.label :upicko_opening_hours, t("listings.form.opening_hours.label"), :class => "input"
+= render partial: "layouts/info_text", locals: { text: t("listings.form.opening_hours.info") }
+= form.text_area(:upicko_opening_hours, :class => "upicko_opening_hours", :maxlength => "255")

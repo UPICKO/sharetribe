@@ -1396,6 +1396,7 @@ en:
       departure_time_radio_buttons:
         repeated: "Repeated (add times and days in the field 'detailed description')"
       description:
+        brief_description: "Brief description"
         detailed_description: "Detailed description"
         youtube_info: "If your description contains YouTube links, the videos will be shown below the description."
       destination:
@@ -1483,6 +1484,28 @@ en:
         privacy: Privacy
         private: "Private (only users who are logged in can see)"
         public: "Public (visible to users who are not logged in)"
+      opening_hours:
+        info: "E.g. 10am to 5pm, Friday to Sunday. Season Dates: Mid September to December. All other times by appointment only. Closed on Christmas Day"
+        label: "Opening Hours"
+      access_fees:
+        info: "E.g. Adult: $10, Kid: $5"
+        label: "Access Fee"
+      unit_fees:
+        info: "E.g. Cherries: $12 / Kg, Strawberries: $5 / Kg"
+        label: "Unit Fee"
+      facility_info:
+        info: "E.g. Caffe, toilet, picnic area"
+        label: "Facilities"
+      season_info:
+        info: "E.g. Cherries are available now!!! Strawberry is out of season, will be available until mid March next year."
+        label: "Season Info"
+      season_status:
+        label: "Season Status"
+        in_season_option_label: "In Season"
+        out_of_season_option_label: "Out Of Season"
+      brief_desc:
+        info: "Please put a brief description of your farm, e.g. why you are special to the customers."
+        label: "Farm Description"
     help_texts:
       help_share_type_title: "Type of the offer or request"
       help_tags_title: Tags

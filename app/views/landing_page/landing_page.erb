@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sumome js lib -->
+  <script src="//load.sumome.com/" data-sumo-site-id="d89a3cbf6b49b4784af5a77c50cad7a9076be2cb8834aeeac062dde99b94773c" async="async"></script>
 
   <% unless local_assigns.has_key?(:skip_analytics) && skip_analytics %>
     <%= render partial: "layouts/google_analytics_script",
@@ -428,6 +430,19 @@
     .jssort01-99-66 .p:hover .c {    top: 0px;    left: 0px;    width: 97px;    height: 64px;    border: #fff 1px solid;    background-position: 50% 50%;}
     .jssort01-99-66 .p.pdn .c {    background-position: 50% 50%;    width: 95px;    height: 62px;    border: #000 2px solid;}* html
                                                                                                                              .jssort01-99-66 .c, * html .jssort01-99-66 .pdn .c, * html .jssort01-99-66 .pav .c {width: 99px; height: 66px;}
+    /* hide the social part */
+    .sumome-control {
+      display: none !important;
+    }
+
+    .sumome-ga-hud {
+      display: none !important;
+    }
+
+    .sumome-share-client {
+      display: none !important;
+    }
+
   </style>
   <link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/landingpage.css" media="screen" rel="stylesheet" type="text/css">
 
