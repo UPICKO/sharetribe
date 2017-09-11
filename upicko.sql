@@ -10,3 +10,4 @@ alter table listings add column upicko_brief_info text;
 update listings set upicko_season_status = 1;
 alter table listings MODIFY upicko_season_status INT NOT NULL DEFAULT 1;
 
+--------------------------------------------------Above Already Deployed on Prod------------------------------------------------------------------------------------
