@@ -29,199 +29,202 @@ $(function() {
         }
     }
 
-    //Replace default marker with fruit icon in google map in home page
-    if($(".home-toolbar").length && markers && markers.length > 0 && markerContents && markerContents.length > 0) {
-        for(i=0; i<markers.length; i++) {
-            var marker = markers[i];
-            var markerId = markerContents[i];
-            switch(markerId) {
-                case 391387: //Farnsworth Apple & Cherry Orchard
-                case 391381: //Ripe Ready Cherry Farm
-                case 435257: //Bluehill Upick Cherries - VIC
-                case 391411: //Chappies Upick - VIC
-                case 391927: //Fair View Hill Berries - VIC
-                case 435260: //Cobradah Upick - VIC
-                case 391337: //Seville Farm - VIC
-                case 435265: //Cherry Bomb - VIC
-                case 435273: //Cherry Heaven - VIC
-                case 435261: //Cherry Hill Upick - VIC
-                case 391395: //Lanidale Cherry Orchard - VIC
-                case 391921: //Big Fella Cherries - VIC
-                case 392722: //hillsideharvest - NSW
-                case 392726: //Lynton Cherry Orchards - NSW
-                case 393794: //Main Range Cherry Orchard - NSW
-                case 393796: //Stockman's Ridge Cherries - NSW
-                case 393802: //Wombat Heights Cherry Farm - NSW
-                case 393806: //Allambie Orchard - NSW
-                case 393904: //George & Sue's Country Farm Produce - NSW
-                case 394381: //Kembla Cherry Orchard - NSW
-                case 394731: //Lavender Hill - NSW
-                case 393804: //Ballinaclash Orchard & Cellar Door - NSW
-                case 397874: //A.T. THOMPSON CHERRIES - SA
-                case 398357: //Forest Range Cherries - SA
-                case 398358: //Harben Vale Cherries - SA
-                case 398360: //Marble Hill Cherries - SA
-                case 398362: //Plummers Border Valley Orchards - SA
-                case 398364: //Stella Creek Cherry Orchard - SA
-                case 398378: //Old Coralinga - SA
-                case 398378: //Verdun PYO Cherry Farm - SA
-                case 408144: //Martin Hill Cherries - SA
-                case 408454: //Lennane Orchards - SA
-                case 408458: //Cherrytime Orchards - SA
-                case 408462: //Fleurieu Cherries - SA
-                case 408467: //Torrens Valley Orchards - SA
-                case 408476: //Kenton Valley Cherries - SA
-                case 408485: //Wotton’s Greenhill Cherries - SA
-                case 408811: //Bandiera Cherries - SA
-                case 408814: //Kerrie's Cherries - SA
-                case 408121: //Ron and Cheryl Burke - SA
-                    marker.setIcon(fruitIconsInfo["cheries"]);
-                    break;
-                case 391934: //Emily Hill Farm - VIC
-                case 435272: //Avonsleigh Berries - VIC
-                case 391372: //Folly Farm Blueberry - VIC
-                case 391897: //The Big Berry - VIC
-                case 391390: //Hillbilly Farm - VIC
-                case 391923: //Summer Berries - VIC
-                case 435269: //Buninyong Berries - VIC
-                case 391888: //Otway Blueberries - VIC
-                case 391348: //Tuckerberry Hill - VIC
-                case 392715: //clyderiverberryfarm - NSW
-                case 398889: //Blueberry Lakes - WA
-                case 407507: //Hampton Blue Organic Blueberries - QLD
-                    marker.setIcon(fruitIconsInfo["blueberries"]);
-                    break;
-                case 391930: //Fielderberry Farm - VIC
-                case 435259: //Jay Berries - VIC
-                    marker.setIcon(fruitIconsInfo["blackberries"]);
-                    break;
-                case 435190: //Lomas Orchards - VIC
-                case 398901: //Spring Valley Organic Orchard - WA
-                    marker.setIcon(fruitIconsInfo["plums"]);
-                    break;
-                case 391385: //Sunny Ridge Strawberry Farm - VIC
-                case 435256: //Bluehill Upick Berries - VIC
-                case 435826: //GatewayEstate Indoor Strawberry Upick - VIC
-                case 391908: //Naturipe Fruits - VIC
-                case 397838: //McMartins Strawberry Farm - QLD
-                case 397851: //Rolin Farms - QLD
-                case 397858: //Strawberry Fields Palmview - QLD
-                case 398371: //Harvest the Fleurieu - SA
-                case 398942: //Hillwood Berry Farm  - TAS
-                case 398942: //Sorell Fruit Farm  - TAS
-                case 399030: //Turners Beach Berry Patch  - TAS
-                case 401931: //Ricardoes Tomatoes - NSW
-                case 406153: //Chambers Flat strawberry farm - QLD
-                case 406247: //Jarvis Fresh Strawberry Farm - QLD
-                case 406318: //Gowinta Farms - QLD
-                case 397911: //Beerenberg Farm - SA
-                case 413117: //Bruny Island Berry Farm- TAS
-                case 413272: //Pick Your Own Strawberry Farm - WA
-                    marker.setIcon(fruitIconsInfo["strawberries"]);
-                    break;
-                case 435816: //RaynerOrchard Farms Upick - VIC
-                case 407912: //Montacute Valley Orchards - SA
-                    marker.setIcon(fruitIconsInfo["peaches"]);
-                    break;
-                case 391324: //Ruefleur Chestnuts
-                case 393934: //Campanella Cottage - NSW
-                case 393950: //Kookootonga Nut Farm - NSW
-                case 394362: //Nutwood Farm - NSW
-                case 398892: //Chestnut Brae - WA
-                    marker.setIcon(fruitIconsInfo["chestnuts"]);
-                    break;
-                case 391338: //Sunny Creek Organic - VIC
-                    marker.setIcon(fruitIconsInfo["gooseberries"]);
-                    break;
-                case 391344: //Paynes Orchard - VIC
-                    marker.setIcon(fruitIconsInfo["apricots"]);
-                    break;
-                case 391404: //Water Wheel Orchard - VIC
-                case 391374: //Bramble Farm - VIC
-                case 391397: //Kinglake Raspberries - VIC
-                case 391885: //Pennyroyal Raspberry Farm - VIC
-                case 393819: //Huntley Berry Farm - VIC
-                case 398900: //Denmark Berry Farm - WA
-                case 411067: //Westerway Raspberry Farm - TAS
-                    marker.setIcon(fruitIconsInfo["raspbeerries"]);
-                    break;
-                case 391869: //Yileen Berry Farm - VIC
-                case 391881: //Herbert Hill Berry Farm - VIC
-                    marker.setIcon(fruitIconsInfo["boysonberries"]);
-                    break;
-                case 392704: //Pine Crest Orchard - NSW
-                case 392719: //Bilpin Fruit Bowl - NSW
-                case 393810: //Bilpin Spring Orchard - NSW
-                case 394371: //TNT Produce Pick Your Own Apples - NSW
-                case 401888: //Appleshack at Glenbernie Orchard - NSW
-                case 407549: //Sutton’s Farm - QLD
-                case 408461: //Harrisville Orchards - SA
-                case 408823: //Mahnew Orchard - SA
-                case 413126: //Lucaston Park Orchards - TAS
-                case 413298: //CORE Cider House - WA
-                case 413587: //Valley Fresh Produce - WA
-                case 413593: //The Fruit Corner - WA
-                    marker.setIcon(fruitIconsInfo["apple"]);
-                    break;
-                case 393800: //Fords Farm - NSW
-                case 394402: //Watkins Family Farm - NSW
-                case 413579: //Golden Grove Orchard - WA
-                    marker.setIcon(fruitIconsInfo["mandarine"]);
-                    break;
-                case 393801: //Montrose Berry Farm - NSW
-                    marker.setIcon(fruitIconsInfo["loganberry"]);
-                    break;
-                case 394414: //The Real Christmas Tree Farm - NSW
-                case 394422: //Dural Christmas Tree Farm - NSW
-                case 394450: //Sydney Christmas Tree Farm - NSW
-                case 394461: //Tomalong Christmas Tree Farm - NSW
-                case 394471: //Willy's Christmas Tree Farm - NSW
-                case 394479: //Kemps Creek Christmas Tree Farm - NSW
-                case 394482: //Triple A Christmas Tree Farm - NSW
-                    marker.setIcon(fruitIconsInfo["christmas_tree"]);
-                    break;
-                case 394433: //Canoelands orchard - NSW
-                    marker.setIcon(fruitIconsInfo["nectarines"]);
-                    break;
-                case 394728: //Norland Fig Orchard - NSW
-                case 408073: //Smith Gully Orchards - SA
-                case 408819: //Willabrand Orchards - SA
-                    marker.setIcon(fruitIconsInfo["figs"]);
-                    break;
-                case 397863: //The Longan Farm - QLD
-                    marker.setIcon(fruitIconsInfo["longan"]);
-                    break;
-                case 401929: //Cedar Creek Orchard - NSW
-                    marker.setIcon(fruitIconsInfo["persimmons"]);
-                    break;
-                case 394719: //TCP Farmgate Tours - NSW
-                    marker.setIcon(fruitIconsInfo["fruits"]);
-                    break;
-                case 405182: //Hinterland Feijoas - QLD
-                    marker.setIcon(fruitIconsInfo["feijoas"]);
-                    break;
-                case 406327: //Superbee Honeyworld - QLD
-                case 406336: //Honey Bee Factory Outlet - NSW
-                    marker.setIcon(fruitIconsInfo["honey"]);
-                    break;
-                case 406365: //Tropical Fruit World - QLD
-                    marker.setIcon(fruitIconsInfo["tropicalFruits"]);
-                    break;
-                case 407183: //Currumbin Valley Harvest - QLD
-                case 407617: //Permaculture Gold Coast - QLD
-                    marker.setIcon(fruitIconsInfo["vegies"]);
-                    break;
-                case 413134: //Coal River Farm - TAS
-                    marker.setIcon(fruitIconsInfo["chocolate"]);
-                    break;
-                case 413224: //Perth Mango Farm - WA
-                    marker.setIcon(fruitIconsInfo["mango"]);
-                    break;
-                default:
-                    marker.setIcon(fruitIconsInfo["fruits"]);
+    $(document).ready(function() {
+        //Replace default marker with fruit icon in google map in home page
+        if($(".home-toolbar").length && markers && markers.length > 0 && markerContents && markerContents.length > 0) {
+            for(i=0; i<markers.length; i++) {
+                var marker = markers[i];
+                var markerId = markerContents[i];
+                switch(markerId) {
+                    case 391387: //Farnsworth Apple & Cherry Orchard
+                    case 391381: //Ripe Ready Cherry Farm
+                    case 435257: //Bluehill Upick Cherries - VIC
+                    case 391411: //Chappies Upick - VIC
+                    case 391927: //Fair View Hill Berries - VIC
+                    case 435260: //Cobradah Upick - VIC
+                    case 391337: //Seville Farm - VIC
+                    case 435265: //Cherry Bomb - VIC
+                    case 435273: //Cherry Heaven - VIC
+                    case 435261: //Cherry Hill Upick - VIC
+                    case 391395: //Lanidale Cherry Orchard - VIC
+                    case 391921: //Big Fella Cherries - VIC
+                    case 392722: //hillsideharvest - NSW
+                    case 392726: //Lynton Cherry Orchards - NSW
+                    case 393794: //Main Range Cherry Orchard - NSW
+                    case 393796: //Stockman's Ridge Cherries - NSW
+                    case 393802: //Wombat Heights Cherry Farm - NSW
+                    case 393806: //Allambie Orchard - NSW
+                    case 393904: //George & Sue's Country Farm Produce - NSW
+                    case 394381: //Kembla Cherry Orchard - NSW
+                    case 394731: //Lavender Hill - NSW
+                    case 393804: //Ballinaclash Orchard & Cellar Door - NSW
+                    case 397874: //A.T. THOMPSON CHERRIES - SA
+                    case 398357: //Forest Range Cherries - SA
+                    case 398358: //Harben Vale Cherries - SA
+                    case 398360: //Marble Hill Cherries - SA
+                    case 398362: //Plummers Border Valley Orchards - SA
+                    case 398364: //Stella Creek Cherry Orchard - SA
+                    case 398378: //Old Coralinga - SA
+                    case 398378: //Verdun PYO Cherry Farm - SA
+                    case 408144: //Martin Hill Cherries - SA
+                    case 408454: //Lennane Orchards - SA
+                    case 408458: //Cherrytime Orchards - SA
+                    case 408462: //Fleurieu Cherries - SA
+                    case 408467: //Torrens Valley Orchards - SA
+                    case 408476: //Kenton Valley Cherries - SA
+                    case 408485: //Wotton’s Greenhill Cherries - SA
+                    case 408811: //Bandiera Cherries - SA
+                    case 408814: //Kerrie's Cherries - SA
+                    case 408121: //Ron and Cheryl Burke - SA
+                        marker.setIcon(fruitIconsInfo["cheries"]);
+                        break;
+                    case 391934: //Emily Hill Farm - VIC
+                    case 435272: //Avonsleigh Berries - VIC
+                    case 391372: //Folly Farm Blueberry - VIC
+                    case 391897: //The Big Berry - VIC
+                    case 391390: //Hillbilly Farm - VIC
+                    case 391923: //Summer Berries - VIC
+                    case 435269: //Buninyong Berries - VIC
+                    case 391888: //Otway Blueberries - VIC
+                    case 391348: //Tuckerberry Hill - VIC
+                    case 392715: //clyderiverberryfarm - NSW
+                    case 398889: //Blueberry Lakes - WA
+                    case 407507: //Hampton Blue Organic Blueberries - QLD
+                        marker.setIcon(fruitIconsInfo["blueberries"]);
+                        break;
+                    case 391930: //Fielderberry Farm - VIC
+                    case 435259: //Jay Berries - VIC
+                        marker.setIcon(fruitIconsInfo["blackberries"]);
+                        break;
+                    case 435190: //Lomas Orchards - VIC
+                    case 398901: //Spring Valley Organic Orchard - WA
+                        marker.setIcon(fruitIconsInfo["plums"]);
+                        break;
+                    case 391385: //Sunny Ridge Strawberry Farm - VIC
+                    case 435256: //Bluehill Upick Berries - VIC
+                    case 435826: //GatewayEstate Indoor Strawberry Upick - VIC
+                    case 391908: //Naturipe Fruits - VIC
+                    case 397838: //McMartins Strawberry Farm - QLD
+                    case 397851: //Rolin Farms - QLD
+                    case 397858: //Strawberry Fields Palmview - QLD
+                    case 398371: //Harvest the Fleurieu - SA
+                    case 398942: //Hillwood Berry Farm  - TAS
+                    case 398942: //Sorell Fruit Farm  - TAS
+                    case 399030: //Turners Beach Berry Patch  - TAS
+                    case 401931: //Ricardoes Tomatoes - NSW
+                    case 406153: //Chambers Flat strawberry farm - QLD
+                    case 406247: //Jarvis Fresh Strawberry Farm - QLD
+                    case 406318: //Gowinta Farms - QLD
+                    case 397911: //Beerenberg Farm - SA
+                    case 413117: //Bruny Island Berry Farm- TAS
+                    case 413272: //Pick Your Own Strawberry Farm - WA
+                        marker.setIcon(fruitIconsInfo["strawberries"]);
+                        break;
+                    case 435816: //RaynerOrchard Farms Upick - VIC
+                    case 407912: //Montacute Valley Orchards - SA
+                        marker.setIcon(fruitIconsInfo["peaches"]);
+                        break;
+                    case 391324: //Ruefleur Chestnuts
+                    case 393934: //Campanella Cottage - NSW
+                    case 393950: //Kookootonga Nut Farm - NSW
+                    case 394362: //Nutwood Farm - NSW
+                    case 398892: //Chestnut Brae - WA
+                        marker.setIcon(fruitIconsInfo["chestnuts"]);
+                        break;
+                    case 391338: //Sunny Creek Organic - VIC
+                        marker.setIcon(fruitIconsInfo["gooseberries"]);
+                        break;
+                    case 391344: //Paynes Orchard - VIC
+                        marker.setIcon(fruitIconsInfo["apricots"]);
+                        break;
+                    case 391404: //Water Wheel Orchard - VIC
+                    case 391374: //Bramble Farm - VIC
+                    case 391397: //Kinglake Raspberries - VIC
+                    case 391885: //Pennyroyal Raspberry Farm - VIC
+                    case 393819: //Huntley Berry Farm - VIC
+                    case 398900: //Denmark Berry Farm - WA
+                    case 411067: //Westerway Raspberry Farm - TAS
+                        marker.setIcon(fruitIconsInfo["raspbeerries"]);
+                        break;
+                    case 391869: //Yileen Berry Farm - VIC
+                    case 391881: //Herbert Hill Berry Farm - VIC
+                        marker.setIcon(fruitIconsInfo["boysonberries"]);
+                        break;
+                    case 392704: //Pine Crest Orchard - NSW
+                    case 392719: //Bilpin Fruit Bowl - NSW
+                    case 393810: //Bilpin Spring Orchard - NSW
+                    case 394371: //TNT Produce Pick Your Own Apples - NSW
+                    case 401888: //Appleshack at Glenbernie Orchard - NSW
+                    case 407549: //Sutton’s Farm - QLD
+                    case 408461: //Harrisville Orchards - SA
+                    case 408823: //Mahnew Orchard - SA
+                    case 413126: //Lucaston Park Orchards - TAS
+                    case 413298: //CORE Cider House - WA
+                    case 413587: //Valley Fresh Produce - WA
+                    case 413593: //The Fruit Corner - WA
+                        marker.setIcon(fruitIconsInfo["apple"]);
+                        break;
+                    case 393800: //Fords Farm - NSW
+                    case 394402: //Watkins Family Farm - NSW
+                    case 413579: //Golden Grove Orchard - WA
+                        marker.setIcon(fruitIconsInfo["mandarine"]);
+                        break;
+                    case 393801: //Montrose Berry Farm - NSW
+                        marker.setIcon(fruitIconsInfo["loganberry"]);
+                        break;
+                    case 394414: //The Real Christmas Tree Farm - NSW
+                    case 394422: //Dural Christmas Tree Farm - NSW
+                    case 394450: //Sydney Christmas Tree Farm - NSW
+                    case 394461: //Tomalong Christmas Tree Farm - NSW
+                    case 394471: //Willy's Christmas Tree Farm - NSW
+                    case 394479: //Kemps Creek Christmas Tree Farm - NSW
+                    case 394482: //Triple A Christmas Tree Farm - NSW
+                        marker.setIcon(fruitIconsInfo["christmas_tree"]);
+                        break;
+                    case 394433: //Canoelands orchard - NSW
+                        marker.setIcon(fruitIconsInfo["nectarines"]);
+                        break;
+                    case 394728: //Norland Fig Orchard - NSW
+                    case 408073: //Smith Gully Orchards - SA
+                    case 408819: //Willabrand Orchards - SA
+                        marker.setIcon(fruitIconsInfo["figs"]);
+                        break;
+                    case 397863: //The Longan Farm - QLD
+                        marker.setIcon(fruitIconsInfo["longan"]);
+                        break;
+                    case 401929: //Cedar Creek Orchard - NSW
+                        marker.setIcon(fruitIconsInfo["persimmons"]);
+                        break;
+                    case 394719: //TCP Farmgate Tours - NSW
+                        marker.setIcon(fruitIconsInfo["fruits"]);
+                        break;
+                    case 405182: //Hinterland Feijoas - QLD
+                        marker.setIcon(fruitIconsInfo["feijoas"]);
+                        break;
+                    case 406327: //Superbee Honeyworld - QLD
+                    case 406336: //Honey Bee Factory Outlet - NSW
+                        marker.setIcon(fruitIconsInfo["honey"]);
+                        break;
+                    case 406365: //Tropical Fruit World - QLD
+                        marker.setIcon(fruitIconsInfo["tropicalFruits"]);
+                        break;
+                    case 407183: //Currumbin Valley Harvest - QLD
+                    case 407617: //Permaculture Gold Coast - QLD
+                        marker.setIcon(fruitIconsInfo["vegies"]);
+                        break;
+                    case 413134: //Coal River Farm - TAS
+                        marker.setIcon(fruitIconsInfo["chocolate"]);
+                        break;
+                    case 413224: //Perth Mango Farm - WA
+                        marker.setIcon(fruitIconsInfo["mango"]);
+                        break;
+                    default:
+                        marker.setIcon(fruitIconsInfo["fruits"]);
+                }
             }
         }
-    }
+    });
+
 
     //Replace default marker with fruit icon in google map in home page when apply fruit filter
     setFruitIconInMapForFilter('checkbox_filter_option_147322', fruitIconsInfo["cheries"]);
