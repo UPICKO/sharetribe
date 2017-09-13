@@ -129,7 +129,11 @@ class PeopleController < Devise::RegistrationsController
 
     # Make person a member of the current community
     if @current_community
-      membership = CommunityMembership.new(:person => @person, :community => @current_community, :consent => @current_community.consent)
+      if params[:farmer_registration] == '1'
+        membership = CommunityMembership.new(:person => @person, :community => @current_community, :consent => @current_community.consent, :can_post_listings => 1)
+      else
+        membership = CommunityMembership.new(:person => @person, :community => @current_community, :consent => @current_community.consent)
+      end
       membership.status = "pending_email_confirmation"
       membership.invitation = invitation if invitation.present?
       # If the community doesn't have any members, make the first one an admin
