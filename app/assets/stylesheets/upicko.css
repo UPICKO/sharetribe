@@ -126,12 +126,6 @@
     background-color: transparent;
 }
 
-/*Make the "Add new listing" button background as grey*/
-.AddNewListingButton__responsiveLayout__1JnL9 .AddNewListingButton__backgroundContainer__4Nn3Z {
-    display: block;
-    background-color: #c3c3c3 !important;
-}
-
 /*Make the "Add new listing" button without underline while mouse hovering*/
 .AddNewListingButton__responsiveLayout__1JnL9:hover {
     text-decoration: none !important;
