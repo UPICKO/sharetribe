@@ -23,6 +23,12 @@ module TopbarHelper
 
     given_name, family_name = *PersonViewUtils.person_display_names(user, community)
 
+    newListingButton = nil
+    if user.present? && user.community_membership.can_post_listings
+      newListingButton =  {
+          text: I18n.t("homepage.index.post_new_listing"),
+      }
+    end
     {
       logo: {
         href: PathHelpers.landing_page_path(
@@ -52,9 +58,7 @@ module TopbarHelper
           familyName: family_name,
         },
       },
-      newListingButton: {
-        text: I18n.t("homepage.index.post_new_listing"),
-      },
+      newListingButton: newListingButton,
       i18n: {
         locale: I18n.locale,
         defaultLocale: I18n.default_locale
