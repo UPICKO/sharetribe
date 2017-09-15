@@ -41,19 +41,21 @@
 #  quantity_selector               :string(32)
 #  unit_tr_key                     :string(64)
 #  unit_selector_tr_key            :string(64)
-#  deleted                         :boolean          default(FALSE)
-#  require_shipping_address        :boolean          default(FALSE)
-#  pickup_enabled                  :boolean          default(FALSE)
+#  deleted                         :boolean           default(FALSE)
+#  require_shipping_address        :boolean           default(FALSE)
+#  pickup_enabled                  :boolean           default(FALSE)
 #  shipping_price_cents            :integer
 #  shipping_price_additional_cents :integer
-#  availability                    :string(32)       default("none")
-#  upicko_opening_hours                   :string(255)      default("none")
-#  upicko_season_status                   :integer
-#  upicko_season_info                     :text             default("none")
-#  upicko_access_fee                      :string(255)      default("none")
-#  upicko_unit_fee                        :string(255)      default("none")
-#  upicko_facility_info                   :text             default("none")
-#  upicko_brief_info                      :text             default("none")
+#  availability                    :string(32)        default("none")
+#  upicko_opening_hours            :string(255)       default("none")
+#  upicko_season_status            :integer
+#  upicko_season_info              :text              default("none")
+#  upicko_access_fee               :string(255)       default("none")
+#  upicko_unit_fee                 :string(255)       default("none")
+#  upicko_facility_info            :text              default("none")
+#  upicko_important_notice         :text
+#  upicko_website                  :string(255)
+#  upicko_phone_number             :string(255)
 #
 # Indexes
 #

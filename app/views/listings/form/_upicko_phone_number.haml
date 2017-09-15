@@ -1,0 +1,3 @@
+= form.label :upicko_phone_number, t("listings.form.upicko_phone_number.label"), :class => "input"
+= render partial: "layouts/info_text", locals: { text: t("listings.form.upicko_phone_number.info")}
+= form.text_field(:upicko_phone_number, :class => "upicko_phone_number", :maxlength => "255")

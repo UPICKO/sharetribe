@@ -11,3 +11,6 @@ update listings set upicko_season_status = 1;
 alter table listings MODIFY upicko_season_status INT NOT NULL DEFAULT 1;
 
 --------------------------------------------------Above Already Deployed on Prod------------------------------------------------------------------------------------
+alter table listings add column upicko_website varchar(255);
+alter table listings add column upicko_phone_number varchar(255);
+alter table listings add column upicko_important_notice text;

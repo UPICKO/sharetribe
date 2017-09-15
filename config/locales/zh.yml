@@ -1381,7 +1381,7 @@ zh:
       departure_time_radio_buttons:
         repeated: 重复的（在字段“详细描述”中添加次数和天数）
       description:
-        brief_description: 简要描述
+        upicko_brief_desc: 简要描述
         detailed_description: 详细描述
         youtube_info: "如果您的描述包括Youtube连结, 该影片将会在描述栏下方显示."
       destination:
@@ -1469,28 +1469,34 @@ zh:
         privacy: 隐私
         private: 私密的（只对登录用户可见）
         public: 公共的（对所有用户可见）
-      opening_hours:
-        info: "例如: 10am to 5pm, Friday to Sunday. Season Dates: Mid September to December. All other times by appointment only. Closed on Christmas Day"
-        label: "开放时间"
-      access_fees:
+      upicko_opening_hours:
+        info: "E.g. 10am to 5pm, Friday to Sunday. Season Dates: Mid September to December. All other times by appointment only. Closed on Christmas Day"
+        label: "Opening Hours"
+      upicko_access_fee:
         info: "E.g. Adult: $10, Kid: $5"
         label: "Access Fee"
-      unit_fees:
+      upicko_unit_fee:
         info: "E.g. Cherries: $12 / Kg, Strawberries: $5 / Kg"
         label: "Unit Fee"
-      facility_info:
-        info: "E.g. Caffe, toilet, picnic area"
+      upicko_facility_info:
+        info: "(Optional) E.g. Caffe, toilet, picnic area"
         label: "Facilities"
-      season_info:
+      upicko_season_info:
         info: "E.g. Cherries are available now!!! Strawberry is out of season, will be available until mid March next year."
         label: "Season Info"
-      season_status:
+      upicko_season_status:
         label: "Season Status"
         in_season_option_label: "In Season"
         out_of_season_option_label: "Out Of Season"
-      brief_desc:
-        info: "Please put a brief description of your farm, e.g. why you are special to the customers."
-        label: "Farm Description"
+      upicko_important_notice:
+        info: "(Optional) This notice will be displayed on top of the information section in the listing detail page"
+        label: "Important Notice"
+      upicko_phone_number:
+        info: "(Optional) Please input your phone number here. E.g. +613xxxxxxxx"
+        label: "Phone Number"
+      upicko_website:
+        info: "(Optional) Your farms website here. E.g. http://www.xxxxxx.com.au"
+        label: "Website"
     help_texts:
       help_share_type_title: 宝贝或者请求的信息的类型
       help_tags_title: 标签
