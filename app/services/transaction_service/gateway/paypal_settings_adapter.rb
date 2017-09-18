@@ -11,6 +11,7 @@ module TransactionService::Gateway
       community_account_verified = paypal_account_verified?(community_id: community_id)
       payment_settings_available = payment_settings.map {|_| true }.or_else(false)
 
+      true
       [personal_account_verified, community_account_verified, payment_settings_available].all?
     end
 
@@ -36,7 +37,8 @@ module TransactionService::Gateway
                   .or_else(:not_connected)
       commission_type = settings[:commission_type].or_else(nil)
 
-      acc_state == :verified || (acc_state == :connected && commission_type == :none)
+      # acc_state == :verified || (acc_state == :connected && commission_type == :none)
+      true
     end
 
   end
