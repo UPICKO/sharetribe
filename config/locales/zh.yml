@@ -1497,6 +1497,9 @@ zh:
       upicko_website:
         info: "(Optional) Your farms website here. E.g. http://www.xxxxxx.com.au"
         label: "Website"
+      upicko_things_to_do:
+        info: "(Optional) Here you can list what the customers can do in your farm or around the area"
+        label: "Things To Do"
     help_texts:
       help_share_type_title: 宝贝或者请求的信息的类型
       help_tags_title: 标签
