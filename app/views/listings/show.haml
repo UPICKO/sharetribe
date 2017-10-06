@@ -133,6 +133,13 @@
             - text_with_line_breaks do
               = @listing.upicko_facility_info
 
+        - if(@listing.upicko_things_to_do.present?)
+          .desc_template_label
+            = t("listings.form.upicko_things_to_do.label")
+          .desc_template_content
+            - text_with_line_breaks do
+              = @listing.upicko_things_to_do
+
         - if(@listing.description.present?)
           .desc_template_label
             = t("listings.form.description.upicko_brief_desc")
