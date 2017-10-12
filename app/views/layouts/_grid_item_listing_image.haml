@@ -27,4 +27,5 @@
             = price_text
       - else
         %span.fluid-thumbnail-grid-image-type{:class => "#{modifier_class}"}
-          = shape_name(listing)
+          - if listing.listing_shape_id != 66071
+            = shape_name(listing)
