@@ -67,6 +67,7 @@ module ListingIndexService::DataTypes
     [:updated_at, :time, :mandatory, str_to_time: "%Y-%m-%dT%H:%M:%S.%L%z"], # 2014-12-08T20:51:29.000+0200
     [:created_at, :time, :mandatory, str_to_time: "%Y-%m-%dT%H:%M:%S.%L%z"],
     [:latitude],
+    [:upicko_selling_point],
     [:longitude],
     [:distance, :optional],
     [:distance_unit, :optional],
