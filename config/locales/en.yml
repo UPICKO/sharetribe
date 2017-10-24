@@ -1515,6 +1515,9 @@ en:
       upicko_things_to_do:
         info: "(Optional) Here you can list what the customers can do in your farm or around the area"
         label: "Things To Do"
+      upicko_selling_point:
+        info: "Input a brief sentence to describe what makes your farm special. (40 characters limit)"
+        label: "Selling Point"
     help_texts:
       help_share_type_title: "Type of the offer or request"
       help_tags_title: Tags

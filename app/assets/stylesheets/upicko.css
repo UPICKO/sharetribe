@@ -229,3 +229,16 @@
 .upicko_green {
     color: green;
 }
+
+.upicko-home-grid-selling-poing-container {
+    font-size: 1.8em;
+    margin-top: 0.4em;
+    text-align: center;
+}
+
+.upicko-home-map-selling-poing-container {
+    font-size: 1.5em;
+    color: black;
+    margin-top: 0.6em;
+    text-align: center;
+}

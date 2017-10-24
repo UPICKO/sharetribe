@@ -20,3 +20,4 @@ alter table listings modify column upicko_unit_fee text;
 alter table listings add column upicko_things_to_do text;
 
 --------------------------------------------------Above Already Deployed on Prod------------------------------------------------------------------------------------
+alter table listings add column upicko_selling_point varchar(40);
