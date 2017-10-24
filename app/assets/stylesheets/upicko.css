@@ -242,3 +242,12 @@
     margin-top: 0.7em;
     text-align: center;
 }
+
+.upicko-detail-page-title-container {
+    margin-bottom: 20px;
+    font-size: 27px
+}
+
+.upicko-detail-page-address-container {
+    margin-top: 5px;
+}
