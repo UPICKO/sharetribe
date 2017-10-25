@@ -5,8 +5,9 @@
       = render :partial => "layouts/grid_item_listing_image", :locals => {:listing => listing, :modifier_class => ""}
 
       - if listing.upicko_selling_point.present?
-        .upicko-home-grid-selling-poing-container
-          = listing.upicko_selling_point
+        .home-fluid-thumbnail-grid-author
+          .upicko-home-grid-selling-poing-container
+            = listing.upicko_selling_point
       - else
         -# Listing author details
         .home-fluid-thumbnail-grid-author
