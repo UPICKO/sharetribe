@@ -634,8 +634,12 @@ function clickStateCheckbox(state) {
     if(state) {
         if(stateInUrl)
             url = url.replace(stateInUrl, state);
-        else
-            url = url + "&q=" + state;
+        else {
+            if(url.indexOf("?") > 0)
+                url = url + "&q=" + state;
+            else
+                url = url + "?q=" + state;
+        }
     } else {
         if(stateInUrl)
             url = url.replace("q=" + stateInUrl, "");
@@ -647,10 +651,14 @@ function clickCategoryCheckbox(category) {
     var url = window.location.href;
     var categoryInUrl = getUrlParameter("category");
     if(category) {
-        if(categoryInUrl)
+        if(categoryInUrl != undefined)
             url = url.replace(categoryInUrl, category);
-        else
-            url = url + "&category=" + category;
+        else {
+            if(url.indexOf("?") > 0)
+                url = url + "&category=" + category;
+            else
+                url = url + "?category=" + category;
+        }
     } else {
         if(categoryInUrl)
             url = url.replace("category=" + categoryInUrl, "");
