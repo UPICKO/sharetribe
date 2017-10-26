@@ -79,7 +79,10 @@ module ListingIndexService::Search
         }
 
         models = Listing.search(
-          Riddle::Query.escape(search[:keywords] || ""),
+          "",
+          conditions: {
+              :title => Riddle::Query.escape(search[:keywords] || "")
+          },
           sql: {
             include: included_models
           },
