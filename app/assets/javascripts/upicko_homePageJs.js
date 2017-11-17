@@ -493,49 +493,47 @@ $(function() {
         homeMedalHtml2 = "<a class='certifiedFarmMedalInGrid' href='javascript:void(0);' title=\""+titleText+"\"><img style='margin-left: 3em; margin-top: 0.2em; float: left; width: 24px' src='https://raw.githubusercontent.com/UPICKO/external_files/master/images/certified.png'/></a>";
         homeMedalHtml3 = "<a class='certifiedFarmMedalInMap' href='javascript:void(0);' title=\""+titleText+"\"><img style='margin-left: 3em; margin-top: 0.2em; float: left; width: 20px' src='https://raw.githubusercontent.com/UPICKO/external_files/master/images/certified.png'/></a>";
         if($(".home-fluid-thumbnail-grid-item").length || $('#map-canvas').length) {
-            $.getScript( "https://code.jquery.com/ui/1.12.1/jquery-ui.js", function( data, textStatus, jqxhr ) {
-                if($(".home-fluid-thumbnail-grid-item").length) {
-                    // Add certified medal to registered farms in grid view
-                    addCertifiedMedalInHomePage();
-                    invokeTooltip();
+            if($(".home-fluid-thumbnail-grid-item").length) {
+                // Add certified medal to registered farms in grid view
+                addCertifiedMedalInHomePage();
+                invokeTooltip();
 
-                    $(".home-fluid-thumbnail-grid").bind("DOMNodeInserted",function(e){
-                        var element = e.target;
-                        var autherNameLinklength = $(element).find(".home-fluid-thumbnail-grid-author-name").length;
-                        var autherEle = autherNameLinklength ?  $(element).find(".home-fluid-thumbnail-grid-author-name") : $(element).find(".home-fluid-thumbnail-grid-details-author-name");
-                        if(autherEle.length) {
-                            if(autherEle.attr("title") != 'Upicko') {
-                                if(autherEle.find('.certifiedFarmMedalInGrid').length)
-                                    return;
-                                if(autherNameLinklength)
-                                    autherEle.after(homeMedalHtml1);
-                                else
-                                    autherEle.after(homeMedalHtml2);
+                $(".home-fluid-thumbnail-grid").bind("DOMNodeInserted",function(e){
+                    var element = e.target;
+                    var autherNameLinklength = $(element).find(".home-fluid-thumbnail-grid-author-name").length;
+                    var autherEle = autherNameLinklength ?  $(element).find(".home-fluid-thumbnail-grid-author-name") : $(element).find(".home-fluid-thumbnail-grid-details-author-name");
+                    if(autherEle.length) {
+                        if(autherEle.attr("title") != 'Upicko') {
+                            if(autherEle.find('.certifiedFarmMedalInGrid').length)
+                                return;
+                            if(autherNameLinklength)
+                                autherEle.after(homeMedalHtml1);
+                            else
+                                autherEle.after(homeMedalHtml2);
+                            invokeTooltip();
+                            event.stopPropagation();
+                        }
+                    }
+                });
+            } else {
+                // Add certified medal to registered farms in map view
+                $("body").on('DOMSubtreeModified', "#map-canvas", function() {
+                    if($('.bubble-details').is(':visible')) {
+                        autherEle = $('.bubble-details .bubble-author a');
+                        if(autherEle.attr("title") != 'Upicko') {
+                            if($('.bubble-details').find('.certifiedFarmMedalInMap').length)
+                                return;
+
+                            var bubblePriceEle = $('.bubble-details').find('.bubble-price');
+                            if($.trim(bubblePriceEle.html()) == "") {
+                                bubblePriceEle.html(homeMedalHtml3);
                                 invokeTooltip();
                                 event.stopPropagation();
                             }
                         }
-                    });
-                } else {
-                    // Add certified medal to registered farms in map view
-                    $("body").on('DOMSubtreeModified', "#map-canvas", function() {
-                        if($('.bubble-details').is(':visible')) {
-                            autherEle = $('.bubble-details .bubble-author a');
-                            if(autherEle.attr("title") != 'Upicko') {
-                                if($('.bubble-details').find('.certifiedFarmMedalInMap').length)
-                                    return;
-
-                                var bubblePriceEle = $('.bubble-details').find('.bubble-price');
-                                if($.trim(bubblePriceEle.html()) == "") {
-                                    bubblePriceEle.html(homeMedalHtml3);
-                                    invokeTooltip();
-                                    event.stopPropagation();
-                                }
-                            }
-                        }
-                    });
-                }
-            });
+                    }
+                });
+            }
         }
 
         // Add certified medal to registered farms in home page
