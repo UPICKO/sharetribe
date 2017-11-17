@@ -464,7 +464,7 @@ function addCommunityMarkers() {
 }
 
 function initialize_listing_map(listings, community_location_lat, community_location_lon, viewport, locale_to_use, use_community_location_as_default) {
-  locale = locale_to_use;
+    locale = locale_to_use;
   // infowindow = new google.maps.InfoWindow();
   infowindow = new InfoBubble({
     shadowStyle: 0,
@@ -497,6 +497,7 @@ function initialize_listing_map(listings, community_location_lat, community_loca
   map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
   var prefer_param_loc = (use_community_location_as_default === 'true');
   addListingMarkers(listings, viewport);
+  new klokantech.GeolocationControl(map, map.maxZoom);
 }
 
 function setMapCenter(communityLat, communityLng, preferCommunityLocation) {

@@ -96,3 +96,4 @@
 //= require upicko_detailPageJs
 //= require upicko_homePageJs
 //= require icheck
+//= require klokantech_v1
