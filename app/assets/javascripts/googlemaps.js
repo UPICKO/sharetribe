@@ -99,6 +99,10 @@ function googlemapMarkerInit(canvas,n_prefix,n_textfield,draggable,community_loc
   }
 
   map = new google.maps.Map(document.getElementById(canvas), myOptions);
+  // Disable clickable landmarks in google map
+  map.setClickableIcons(false);
+  // Enable Scale control
+  map.setOptions({ zoomControl: true});
   if (latitude.value != "") {
     setMapCenter(latitude.value, longitude.value, true);
   } else {
@@ -259,6 +263,10 @@ function googlemapRouteInit(canvas) {
   }
 
   map = new google.maps.Map(document.getElementById(canvas), myOptions);
+  // Disable clickable landmarks in google map
+  map.setClickableIcons(false);
+  // Enable Scale control
+  map.setOptions({ zoomControl: true});
 
   var markerOptions = {
     'animation': google.maps.Animation.DROP
@@ -465,8 +473,8 @@ function addCommunityMarkers() {
 
 function initialize_listing_map(listings, community_location_lat, community_location_lon, viewport, locale_to_use, use_community_location_as_default) {
     locale = locale_to_use;
-  // infowindow = new google.maps.InfoWindow();
-  infowindow = new InfoBubble({
+    // infowindow = new google.maps.InfoWindow();
+    infowindow = new InfoBubble({
     shadowStyle: 0,
     borderRadius: 5,
     borderWidth: 1,
@@ -476,28 +484,32 @@ function initialize_listing_map(listings, community_location_lat, community_loca
     maxHeight: 150, // 150 for single, 180 for multi
     maxWidth: 200,
     hideCloseButton: true
-  });
-  if ($(window).width() >= 768) {
+    });
+    if ($(window).width() >= 768) {
     infowindow.setMinHeight(235);
     infowindow.setMinWidth(425);
-  } else {
+    } else {
     infowindow.setMinHeight(150);
     infowindow.setMinWidth(225);
-  }
-  directionsService = new google.maps.DirectionsService();
-  directionsDisplay = new google.maps.DirectionsRenderer();
-  directionsDisplay.setOptions( { suppressMarkers: true } );
-  helsinki = new google.maps.LatLng(60.17, 24.94);
-  flagMarker = new google.maps.Marker();
-  var myOptions = {
+    }
+    directionsService = new google.maps.DirectionsService();
+    directionsDisplay = new google.maps.DirectionsRenderer();
+    directionsDisplay.setOptions( { suppressMarkers: true } );
+    helsinki = new google.maps.LatLng(60.17, 24.94);
+    flagMarker = new google.maps.Marker();
+    var myOptions = {
     zoom: 16,
     maxZoom: 17,
     mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
-  var prefer_param_loc = (use_community_location_as_default === 'true');
-  addListingMarkers(listings, viewport);
-  new klokantech.GeolocationControl(map, map.maxZoom);
+    };
+    map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+    // Disable clickable landmarks in google map
+    map.setClickableIcons(false);
+    // Enable Scale control
+    map.setOptions({ zoomControl: true});
+    var prefer_param_loc = (use_community_location_as_default === 'true');
+    addListingMarkers(listings, viewport);
+    new klokantech.GeolocationControl(map, map.maxZoom);
 }
 
 function setMapCenter(communityLat, communityLng, preferCommunityLocation) {

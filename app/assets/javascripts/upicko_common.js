@@ -14,16 +14,6 @@ $(function() {
                 $(".SearchBar__keywordInput__2HTav").val("")
         }
     }
-
-    if(typeof map != 'undefined' && map) {
-        // Disable clickable landmarks in google map
-        map.setClickableIcons(false);
-        // Disable mouse scroll zoom
-        map.setOptions({ scrollwheel: false });
-        // Enable Scale control
-        map.setOptions({ zoomControl: true});
-    }
-
 });
 
 $(window).on('load', function () {
