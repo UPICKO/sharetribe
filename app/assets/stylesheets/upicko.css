@@ -230,8 +230,8 @@
     color: green;
 }
 
-.upicko-home-grid-selling-poing-container {
-    font-size: 1.4em;
+.upicko-home-grid-selling-point-container {
+    font-size: 1.3em;
     padding-top: 0.5em;
     text-align: center;
 }
@@ -245,7 +245,7 @@
 
 .upicko-detail-page-title-container {
     margin-bottom: 20px;
-    font-size: 27px
+    font-size: 1.3em
 }
 
 .upicko-detail-page-address-container {
