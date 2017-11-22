@@ -577,14 +577,14 @@ function getBannerHtml() {
     return "" +
         "<table class='bannerTable' style='background-image: url("+featureFarmsInfo[randomInt].imageUrl+");'>" +
         "	<tr style='height: 150px'>" +
-        "		<td width='24%' style='text-valign: middle; padding-left: 20px'>" +
+        "		<td width='44%' style='text-valign: middle; padding-left: 20px'>" +
         "			<h1 id='bannerDesc'>" +
-        "				Find nearby pick-your-own farms" +
+        "				Find the U-Pick farms around you" +
         "				<br/>" +
-        "				Buy your access pass online" +
+        "				Buy the fresh food from farms by whole sale price" +
         "			</h1>" +
         "		</td>" +
-        "		<td width='76%'>" +
+        "		<td width='56%'>" +
         "			<a href='"+featureFarmsInfo[randomInt].hrefUrl+"'>" +
         "				<div style='width: 100%; height: 100px' ></div>" +
         "			</a>" +
