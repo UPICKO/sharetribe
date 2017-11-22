@@ -4,15 +4,9 @@ $(function() {
         $(".home-toolbar").next().find('.row').first().remove();
     }
 
-    //Add banner page with search box in home page
+    //Add banner page in home page
     if ($(".home-toolbar").length && $(".Topbar__topbar__7GUWt").length) {
         $(".Topbar__topbar__7GUWt").after(getBannerHtml());
-        // Move search bar in home page
-        $("#topbar-container .SearchBar__root__2hIPj").show();
-        processMoveSearchBar();
-        $(window).resize(function () {
-            processMoveSearchBar();
-        });
     }
 
     //Display marketing banner on home page for private web mode
@@ -578,32 +572,19 @@ function invokeTooltip() {
     });
 }
 
-// Move search bar function
-function processMoveSearchBar() {
-    if($(window).width() >= 1270) {
-        var element = $(".SearchBar__root__2hIPj").detach();
-        element.addClass("floatLeft");
-        $("#bannerDesc").after(element);
-    } else {
-        var element = $(".SearchBar__root__2hIPj").detach();
-        element.removeClass("floatLeft");
-        $(".Topbar__topbarMenuSpacer__3hqBi").before(element);
-    }
-}
-
 function getBannerHtml() {
     var randomInt = Math.floor((Math.random() * featureFarmsInfo.length));
     return "" +
         "<table class='bannerTable' style='background-image: url("+featureFarmsInfo[randomInt].imageUrl+");'>" +
-        "	<tr>" +
-        "		<td width='34%' style='text-valign: middle; padding-left: 20px'>" +
+        "	<tr style='height: 150px'>" +
+        "		<td width='24%' style='text-valign: middle; padding-left: 20px'>" +
         "			<h1 id='bannerDesc'>" +
         "				Find nearby pick-your-own farms" +
         "				<br/>" +
         "				Buy your access pass online" +
         "			</h1>" +
         "		</td>" +
-        "		<td width='66%'>" +
+        "		<td width='76%'>" +
         "			<a href='"+featureFarmsInfo[randomInt].hrefUrl+"'>" +
         "				<div style='width: 100%; height: 100px' ></div>" +
         "			</a>" +

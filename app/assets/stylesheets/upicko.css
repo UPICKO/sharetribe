@@ -89,11 +89,6 @@
     }
 }
 
-/* Hide the search bar in topbar container */
-#topbar-container .SearchBar__root__2hIPj {
-    display: none;
-}
-
 .floatLeft {
     float: left;
     width: auto;
