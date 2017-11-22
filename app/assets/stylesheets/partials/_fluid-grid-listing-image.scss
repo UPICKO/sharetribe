@@ -40,6 +40,7 @@
   @include listing-price;
   font-size: 12px; // Quantity placeholder font-size, so that the ellipsis looks nice
   max-width: 75%;
+  padding: 0px;
   @include ellipsis;
 }
 
