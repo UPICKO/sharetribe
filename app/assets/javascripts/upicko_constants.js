@@ -1,7 +1,7 @@
 //NO PYO AVAILABLE! SHED DOOR SALES ONLY.
 featureFarmsInfo = [
-    {imageUrl:"https://raw.githubusercontent.com/UPICKO/external_files/master/images/banner_example_etsy_rayner.png", hrefUrl:"https://www.upicko.com/en/listings/381521-raynerorchard-farms-upick-vic"},
-// 	{imageUrl:"https://raw.githubusercontent.com/UPICKO/external_files/master/images/banner_example_etsy_gateway.png", hrefUrl:"https://www.upicko.com/en/listings/378583-gatewayestate-indoor-strawberry-upick-vic"}
+    {imageUrl:"https://raw.githubusercontent.com/UPICKO/external_files/master/images/banner_example_etsy_rayner.png", hrefUrl:"https://www.upicko.com/en/listings/435816-rayner-orchard-farms-woori-yallock-vic"},
+// 	{imageUrl:"https://raw.githubusercontent.com/UPICKO/external_files/master/images/banner_example_etsy_gateway.png", hrefUrl:"https://www.upicko.com/en/listings/435826-gatewayestate-indoor-strawberry-coldstream-vic"}
 ];
 
 fruitIconsInfo = {
