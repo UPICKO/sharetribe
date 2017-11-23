@@ -213,40 +213,41 @@
             - with_quantity_text(@current_community, @listing) do |text|
               %span.listing-price-quantity
                 = text
-
     .row-with-divider
       .col-12
         #listing-message-links
           = render :partial => "listing_actions", locals: { form_path: form_path, payment_gateway: payment_gateway, delivery_opts: delivery_opts, process: process, listing_unit_type: listing_unit_type, country_code: country_code, blocked_dates_end_on: blocked_dates_end_on, blocked_dates_result: blocked_dates_result, manage_availability_props: manage_availability_props, availability_enabled: availability_enabled, currency_opts: currency_opts }
 
-    .row-with-divider
-      .col-12
-        .listing-author
-          .listing-author-avatar
-            = medium_avatar_thumb(@listing.author, {:class => "listing-author-avatar-image"})
-          .listing-author-details
-            .listing-author-name
-              = link_to PersonViewUtils.person_display_name(@listing.author, @current_community), @listing.author, :id => "listing-author-link", :class => "listing-author-name-link", :title => "#{PersonViewUtils.person_display_name(@listing.author, @current_community)}"
-            - if @listing.author != @current_user
-              .listing-author-contact
-                %a#listing-contact{href: contact_to_listing_path(:listing_id => @listing.id.to_s), :class => "listing-author-contact-button"}
-                  .content
-                    = t(".contact")
-
-    - if received_testimonials.size > 0
-      .row-with-divider.listing-author-activity
+    -#If the listing is created by myself, then do not display the profile info
+    - if @listing.author.username != 'frankt'
+      .row-with-divider
         .col-12
-          %i.listing-author-activity-icon{:class => icon_class("testimonial")}
-          .listing-author-activity-item
-            .listing-author-activity-value
-              - if received_testimonials.size > 0
-                = feedback_positive_percentage.to_s + "%"
-                = t("people.show.positive")
-                = "(#{received_positive_testimonials.size}/#{received_testimonials.size})"
-              - else
-                = t(".no_reviews")
-            .listing-author-activity-description
-              = t(".feedback")
+          .listing-author
+            .listing-author-avatar
+              = medium_avatar_thumb(@listing.author, {:class => "listing-author-avatar-image"})
+            .listing-author-details
+              .listing-author-name
+                = link_to PersonViewUtils.person_display_name(@listing.author, @current_community), @listing.author, :id => "listing-author-link", :class => "listing-author-name-link", :title => "#{PersonViewUtils.person_display_name(@listing.author, @current_community)}"
+              - if @listing.author != @current_user
+                .listing-author-contact
+                  %a#listing-contact{href: contact_to_listing_path(:listing_id => @listing.id.to_s), :class => "listing-author-contact-button"}
+                    .content
+                      = t(".contact")
+
+      - if received_testimonials.size > 0
+        .row-with-divider.listing-author-activity
+          .col-12
+            %i.listing-author-activity-icon{:class => icon_class("testimonial")}
+            .listing-author-activity-item
+              .listing-author-activity-value
+                - if received_testimonials.size > 0
+                  = feedback_positive_percentage.to_s + "%"
+                  = t("people.show.positive")
+                  = "(#{received_positive_testimonials.size}/#{received_testimonials.size})"
+                - else
+                  = t(".no_reviews")
+              .listing-author-activity-description
+                = t(".feedback")
 
     - if @listing.origin_loc && @listing.origin_loc.address != ""
       .row

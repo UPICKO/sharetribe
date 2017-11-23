@@ -150,6 +150,8 @@
 
       = hidden_field_tag(:listing_id, @listing.id)
 
+    -#If it is upick access category, then do not display the auther profile
+    - if @listing.category_id != 211375
       - blocked_dates_result.on_success do
         %button.enabled-book-button
           .content

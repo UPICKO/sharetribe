@@ -19,12 +19,6 @@ $(function() {
                         }
                     });
                 }
-
-                /* Check if the order type is upicko access, if not display the booking/pay button as well as the profile of the farmer */
-                if($.trim($('#listing-message-links #booking-dates .enabled-book-button .content').html()) !== 'Upick Booking') {
-                    $('#listing-message-links').show();
-                    $('.SearchBar__topLevelBody__2_hhm .page-content .row .col-4 .row-with-divider').show();
-                }
             }
         }
     }
