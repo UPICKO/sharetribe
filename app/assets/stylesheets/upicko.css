@@ -246,3 +246,8 @@
 .upicko-detail-page-address-container {
     margin-top: 5px;
 }
+
+/*Hide the booking button in farm detail page*/
+#listing-message-links {
+    display: none;
+}
