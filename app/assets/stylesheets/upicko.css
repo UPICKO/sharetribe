@@ -251,3 +251,8 @@
 #listing-message-links {
     display: none;
 }
+
+/*Hide the profile info in farm detail page*/
+.SearchBar__topLevelBody__2_hhm .page-content .row .col-4 .row-with-divider {
+    display: none;
+}
