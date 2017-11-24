@@ -246,3 +246,39 @@
 .upicko-detail-page-address-container {
     margin-top: 5px;
 }
+
+.home-fluid-thumbnail-grid-item {
+    position: relative;
+}
+
+.upicko-home-season-status-container-grid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+    height: 10%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    opacity: 0.9;
+}
+
+.upicko-home-season-status-container-map {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    opacity: 0.9;
+}
+
+.upicko-home-season-status-color-red {
+    background-color: red;
+}
+
+.upicko-home-season-status-color-green {
+    background-color: green;
+}

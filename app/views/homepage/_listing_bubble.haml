@@ -27,3 +27,10 @@
             - elsif listing.unit_type
               %span.bubble-price-quantity
                 = price_quantity_per_unit(listing)
+  .upicko-home-season-status-container-map
+    - if listing.upicko_season_status == 1
+      .upicko-home-season-status-color-green
+        = 'In Season'
+    - else
+      .upicko-home-season-status-color-red
+        = 'Out Of Season'

@@ -10,6 +10,7 @@ module ListingIndexService::Search::Converters
       created_at: l.created_at,
       category_id: l.category_id,
       upicko_selling_point: l.upicko_selling_point,
+      upicko_season_status: l.upicko_season_status,
       comment_count: l.comments_count,
       price: l.price,
       unit_tr_key: l.unit_tr_key,

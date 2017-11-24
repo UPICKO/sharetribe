@@ -28,3 +28,10 @@
               - dist_string = "#{dist} #{listing.distance_unit}"
               .home-fluid-thumbnail-grid-details-distance{title: dist_string}
                 = dist_string
+    .upicko-home-season-status-container-grid
+      - if listing.upicko_season_status == 1
+        .upicko-home-season-status-color-green
+          = 'In Season'
+      - else
+        .upicko-home-season-status-color-red
+          = 'Out Of Season'
