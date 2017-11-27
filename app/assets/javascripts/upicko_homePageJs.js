@@ -459,7 +459,7 @@ $(function() {
                 checkedCheckboxContainer.removeClass('checked');
                 checkedCheckboxContainer.find(':checkbox').prop("checked",false);
                 //Click the "update view" button
-                $("#desktop-filters #filters button").click();
+                $("#filters button").click();
             });
 
             $("#filters").find('.custom-filter-checkbox-label-text').on("click", function() {

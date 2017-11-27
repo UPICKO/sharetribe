@@ -141,6 +141,10 @@
     display: none;
 }
 
+.hidden-tablet #filters button {
+    display: none;
+}
+
 /*Hide the location search*/
 .SearchBar__locationInput__3g__8 {
     display: none;
