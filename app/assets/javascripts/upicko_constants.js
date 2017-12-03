@@ -54,7 +54,7 @@ stateInfo = [
 ]
 
 inSeasonFruits = [
-    "Mandarines", "Kiwi Fruit", "Strawberries"
+    "Cherries", "Raspberries", "Strawberries"
 ]
 
 titleText = "" +
