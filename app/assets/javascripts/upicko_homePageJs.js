@@ -221,41 +221,43 @@ $(function() {
 
 
     //Replace default marker with fruit icon in google map in home page when apply fruit filter
-    setFruitIconInMapForFilter('checkbox_filter_option_147322', fruitIconsInfo["cheries"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_147458', fruitIconsInfo["sourcherries"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_147324', fruitIconsInfo["blueberries"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160213', fruitIconsInfo["raspbeerries"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_147323', fruitIconsInfo["strawberries"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160212', fruitIconsInfo["blackberries"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_147325', fruitIconsInfo["apple"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_147326', fruitIconsInfo["kiwifruit"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160215', fruitIconsInfo["bayberries"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160216', fruitIconsInfo["apricots"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160217', fruitIconsInfo["boysonberries"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160218', fruitIconsInfo["figs"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160219', fruitIconsInfo["plums"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160220', fruitIconsInfo["peaches"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160221', fruitIconsInfo["nectarines"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_179759', fruitIconsInfo["chestnuts"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160222', fruitIconsInfo["quinces"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_160214', fruitIconsInfo["vegies"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_180103', fruitIconsInfo["christmas_tree"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_180107', fruitIconsInfo["pear"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_180105', fruitIconsInfo["longan"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_180108', fruitIconsInfo["youngberry"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_180104', fruitIconsInfo["loganberry"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_180106', fruitIconsInfo["marionberry"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_180777', fruitIconsInfo["mandarine"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_180953', fruitIconsInfo["walnuts"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_181377', fruitIconsInfo["tomatos"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_181376', fruitIconsInfo["honey"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_183059', fruitIconsInfo["grapes"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_185165', fruitIconsInfo["persimmons"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_186572', fruitIconsInfo["feijoas"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_187241', fruitIconsInfo["tropicalFruits"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_192357', fruitIconsInfo["chocolate"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_192476', fruitIconsInfo["mango"]);
-    setFruitIconInMapForFilter('checkbox_filter_option_192604', fruitIconsInfo["oranges"]);
+    $(document).ready(function() {
+        setFruitIconInMapForFilter('checkbox_filter_option_147322', fruitIconsInfo["cheries"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_147458', fruitIconsInfo["sourcherries"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_147324', fruitIconsInfo["blueberries"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160213', fruitIconsInfo["raspbeerries"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_147323', fruitIconsInfo["strawberries"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160212', fruitIconsInfo["blackberries"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_147325', fruitIconsInfo["apple"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_147326', fruitIconsInfo["kiwifruit"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160215', fruitIconsInfo["bayberries"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160216', fruitIconsInfo["apricots"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160217', fruitIconsInfo["boysonberries"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160218', fruitIconsInfo["figs"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160219', fruitIconsInfo["plums"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160220', fruitIconsInfo["peaches"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160221', fruitIconsInfo["nectarines"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_179759', fruitIconsInfo["chestnuts"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160222', fruitIconsInfo["quinces"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_160214', fruitIconsInfo["vegies"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_180103', fruitIconsInfo["christmas_tree"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_180107', fruitIconsInfo["pear"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_180105', fruitIconsInfo["longan"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_180108', fruitIconsInfo["youngberry"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_180104', fruitIconsInfo["loganberry"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_180106', fruitIconsInfo["marionberry"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_180777', fruitIconsInfo["mandarine"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_180953', fruitIconsInfo["walnuts"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_181377', fruitIconsInfo["tomatos"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_181376', fruitIconsInfo["honey"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_183059', fruitIconsInfo["grapes"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_185165', fruitIconsInfo["persimmons"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_186572', fruitIconsInfo["feijoas"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_187241', fruitIconsInfo["tropicalFruits"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_192357', fruitIconsInfo["chocolate"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_192476', fruitIconsInfo["mango"]);
+        setFruitIconInMapForFilter('checkbox_filter_option_192604', fruitIconsInfo["oranges"]);
+    });
 
     //Add fruit icon in the front of the text in fruit filter
     if($('#checkbox_filter_option_147322').length) {
