@@ -1,0 +1,3 @@
+= form.label :upicko_video_url, t('listings.form.upicko_video_url.label'), :class => 'input'
+= render partial: 'layouts/info_text', locals: { text: t('listings.form.upicko_video_url.info') }
+= form.text_field(:upicko_video_url, :class => 'upicko_video_url', :maxlength => '255')

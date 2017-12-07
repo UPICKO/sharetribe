@@ -58,6 +58,7 @@
 #  upicko_phone_number             :string(255)
 #  upicko_things_to_do             :text
 #  upicko_selling_point            :string(40)
+#  upicko_video_url                :string(255)
 #
 # Indexes
 #

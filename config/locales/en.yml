@@ -1399,6 +1399,7 @@ en:
         upicko_brief_desc: "Brief description"
         detailed_description: "Detailed description"
         youtube_info: "If your description contains YouTube links, the videos will be shown below the description."
+        upicko_brief_desc_info: "Please provide a brief introduction of your farm here"
       destination:
         destination: Destination
       form_content:
@@ -1489,7 +1490,7 @@ en:
         label: "Opening Hours"
       upicko_access_fee:
         info: "E.g. Adult: $10, Kid: $5"
-        label: "Access Fee"
+        label: "Entry Fee"
       upicko_unit_fee:
         info: "E.g. Cherries: $12 / Kg, Strawberries: $5 / Kg"
         label: "Unit Fee"
@@ -1518,6 +1519,9 @@ en:
       upicko_selling_point:
         info: "Input a brief sentence to describe what makes your farm special. (40 characters limit)"
         label: "Selling Point"
+      upicko_video_url:
+        info: "(Optional) If you have Youtube Video for your farm, please put it here"
+        label: "Youtube Video"
     help_texts:
       help_share_type_title: "Type of the offer or request"
       help_tags_title: Tags

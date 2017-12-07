@@ -148,10 +148,12 @@
           .desc_template_content
             - text_with_line_breaks do
               = @listing.description
-            - if(youtube_link_ids.present?)
-              - youtube_link_ids.each do |youtube_id|
-                .listing-description-youtube-wrapper
-                  %iframe.listing-description-youtube-iframe{ title: t("listings.show.youtube_video_player"), width: 640, height:390, src: "//www.youtube.com/embed/#{ youtube_id }", frameborder: 0, allowfullscreen: true}
+
+        - if(@listing.upicko_video_url.present?)
+          - if(youtube_link_ids.present?)
+            - youtube_link_ids.each do |youtube_id|
+              .listing-description-youtube-wrapper
+                %iframe.listing-description-youtube-iframe{ title: t("listings.show.youtube_video_player"), width: 640, height:390, src: "//www.youtube.com/embed/#{ youtube_id }", frameborder: 0, allowfullscreen: true}
 
         - if(@listing.upicko_website.present?)
           .desc_template_label
